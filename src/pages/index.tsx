@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import { Inter } from '@next/font/google';
 
 import Header from '../components/Header';
-import Hero from '../components/Hero';
+import Hero from '../components/Hero/Hero';
 
 const inter = Inter({ subsets: ['latin'] });
 
