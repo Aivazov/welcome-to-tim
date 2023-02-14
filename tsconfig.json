@@ -12,7 +12,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsxdev",
+    // "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
     "paths": {
