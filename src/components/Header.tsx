@@ -14,7 +14,7 @@ const icons = [
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-150">
+    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20">
       {/* Social Icons */}
       <motion.div
         initial={{
@@ -30,7 +30,7 @@ export default function Header({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center"
+        className="flex flex-row items-center z-20 hover:text-gray-100"
       >
         {icons.map((icon, key) => (
           <SocialIcon
