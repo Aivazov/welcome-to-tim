@@ -8,6 +8,10 @@ export default class About extends Component<Props, State> {
   state = {};
 
   render() {
-    return <div className="h-screen flex flex-col relative">About</div>;
+    return (
+      <div className="h-screen flex flex-col text-center md:text-left md:flex-row relative">
+        About
+      </div>
+    );
   }
 }
