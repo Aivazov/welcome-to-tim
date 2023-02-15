@@ -14,7 +14,7 @@ const icons = [
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-100">
+    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-150">
       {/* Social Icons */}
       <motion.div
         initial={{
