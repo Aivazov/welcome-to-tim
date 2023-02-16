@@ -8,6 +8,7 @@ import About from '../components/About';
 import Experience from '@/components/Experience/Experience';
 import Skills from '@/components/Skills/Skills';
 import Projects from '@/components/Projects/Projects';
+import Contact from '@/components/Contact';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -48,6 +49,12 @@ const Home: NextPage = () => {
         {/* Projects */}
         <section id="projects" className="snap-start">
           <Projects />
+        </section>
+
+        {/* Contact */}
+
+        <section id="contact" className="snap-start">
+          <Contact />
         </section>
       </main>
     </div>
