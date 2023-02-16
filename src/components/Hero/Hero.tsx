@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
 import Link from 'next/link';
@@ -21,8 +21,8 @@ export default function Hero({}: Props) {
       <BackgroundCircles />
       <img
         className="rounded-full relative h-32 w-32 object-cover"
-        src="https://media.licdn.com/dms/image/D4D03AQH7bsCe0UQo8w/profile-displayphoto-shrink_800_800/0/1669725289507?e=2147483647&v=beta&t=_bb9Oq1uGr-DU-HHez1hCqIxFLdfeu6LPV-g-rtC39o"
-        alt=""
+        src="/static/tim-aivazov.png"
+        alt="tim's hero image"
       />
       <div className="z-20">
         <h2 className="uppercase text-sm text-gray-500 pb-1 tracking-[7px]">
@@ -33,7 +33,7 @@ export default function Hero({}: Props) {
           <Cursor cursorColor="text-gray-400" />
         </h1>
 
-        <div className='pt-5'>
+        <div className="pt-5">
           <Link href="#about">
             <button className="hero-button">About</button>
           </Link>
