@@ -20,6 +20,7 @@ export default function Skill({ directionLeft }: Props) {
         transition={{
           duration: 1,
         }}
+        viewport={{ once: true }}
         src="/static/skills/css3.svg"
         className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
       />
