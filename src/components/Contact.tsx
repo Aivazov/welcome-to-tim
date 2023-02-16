@@ -17,8 +17,9 @@ export default function Contact({}: Props) {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    window.location.href = `mailto:ivazow.t@gmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message} (${data.email})`;
+  const onSubmit = (data: object) => {
+    // window.location.href = `mailto:ivazow.t@gmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message} (${data.email})`;
+    console.log(data);
   };
 
   return (
