@@ -23,8 +23,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        {/* <section> */}
         <Header />
-
+        {/* </section> */}
         {/* Hero  */}
         <section id="hero" className="snap-start">
           <Hero />
@@ -59,10 +60,9 @@ const Home: NextPage = () => {
         </section>
 
         {/* Home button */}
-        <Link href="#hero">
+        {/* <Link href="#hero">
           <footer className="sticky bottom-5 w-full cursor-pointer">
             <div className="flex items-center justify-end">
-              {/* // eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/static/circle_up_icon.svg"
                 alt="home button"
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
               />
             </div>
           </footer>
-        </Link>
+        </Link> */}
       </main>
     </div>
   );
