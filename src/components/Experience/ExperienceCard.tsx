@@ -10,7 +10,7 @@ type Props = {
 
 export default function ExperienceCard({}: Props) {
   return (
-    <article className="flex flex-col items-center space-y-7 flex-shrink-0 rounded-full w-[500px] md:w-[600px] xl:w-[900px]">
+    <article className="flex flex-col items-center space-y-7 flex-shrink-0 rounded-lg w-[500px] md:w-[600px] xl:w-[900px] bg-[#292929] hover:opacity-100 opacity-60 snap-center">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}
@@ -20,6 +20,10 @@ export default function ExperienceCard({}: Props) {
       >
         {/* <GoItIcon /> */}
         <FramerMotionIcon />
+        {/* <img
+          className="w-10 h-10 rounded-full"
+          src="/static/skills/framer-motion.svg"
+        /> */}
       </motion.div>
 
       <div className="px-0 md:px-10">

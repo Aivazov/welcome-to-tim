@@ -4,8 +4,9 @@ type Props = {};
 
 export default function FramerMotionIcon({}: Props) {
   return (
-    <div>
+    <div className="mt-2">
       <svg
+        className="w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center "
         xmlns="http:www.w3.org/2000/svg"
         viewBox="0 0 14 21"
         role="presentation"

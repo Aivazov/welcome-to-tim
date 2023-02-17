@@ -31,13 +31,13 @@ export default function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen relative flex flex-col justify-evenly items-center text-left md:flex-row  max-w-full mx-auto px-10 overflow-hidden"
+      className="h-screen relative flex flex-col justify-evenly items-center text-left md:flex-row  max-w-full mx-auto px-10 overflow-hidden cursor-pointer transition-opacity duration-300 overflow-hidden"
     >
-      <h3 className="ml-4 absolute top-24 text-2xl text-gray-500 tracking-[19px] uppercase">
+      <h3 className="ml-4 title">
         Experience
       </h3>
 
-      <div>
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
         {/* Expereince Card */}
         {/* {icons.map(({ icon, title }, idx) => {
           return <ExperienceCard icon={icon} key={idx} />;
@@ -48,7 +48,7 @@ export default function Experience({}: Props) {
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
-        
+
         {/* <ExperienceCard icon={GoItIcon} /> */}
       </div>
     </motion.div>

@@ -11,11 +11,9 @@ export default function Projects({}: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
-      className="h-screen relative flex flex-cols items-center justify-evenly text-left md:flex-row max-w-full mx-auto px-10 z-0"
+      className="h-screen relative flex overflow-hidden flex-cols text-left md:flex-row max-w-full items-center justify-evenly mx-auto z-0"
     >
-      <h3 className="absolute ml-4 top-24 text-2xl text-gray-500 uppercase tracking-[19px]">
-        Projects
-      </h3>
+      <h3 className="title">Projects</h3>
 
       <div className="w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory relative z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 scrollbar-thin">
         {projects.map((project, key) => (
