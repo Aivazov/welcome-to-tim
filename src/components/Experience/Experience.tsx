@@ -5,10 +5,24 @@ import MaIcon from 'public/static/projects/MaIcon';
 import GoItIcon from 'public/static/projects/GoItIcon';
 import { JsxAttribute } from 'typescript';
 
+const icons = [
+  {
+    icon: MaIcon,
+    title: 'Mate Academy',
+    link: 'https://nextjs-dashboard-test-task-git-main-aivazov.vercel.app/',
+  },
+  {
+    img: GoItIcon,
+    title: 'GoIt Academy',
+    link: 'https://weather-responsive-app-nextjs.vercel.app/',
+  },
+];
+
 type Props = {
-  icon: any;
-  MaIcon: JsxAttribute;
-  GoItIcon: JsxAttribute;
+  // icon: any;
+  // title: string;
+  // MaIcon: JsxAttribute;
+  // GoItIcon: JsxAttribute;
 };
 
 export default function Experience({}: Props) {
@@ -25,8 +39,17 @@ export default function Experience({}: Props) {
 
       <div>
         {/* Expereince Card */}
-        <ExperienceCard icon={MaIcon} />
-        <ExperienceCard icon={GoItIcon} />
+        {/* {icons.map(({ icon, title }, idx) => {
+          return <ExperienceCard icon={icon} key={idx} />;
+        })} */}
+
+        {/* {/* <ExperienceCard icon={MaIcon} /> */}
+
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        
+        {/* <ExperienceCard icon={GoItIcon} /> */}
       </div>
     </motion.div>
   );

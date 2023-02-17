@@ -61,9 +61,13 @@ const Home: NextPage = () => {
         {/* Home button */}
         <Link href="#hero">
           <footer className="sticky bottom-5 w-full cursor-pointer">
-            <div className='flex items-center justify-end'>
+            <div className="flex items-center justify-end">
               {/* // eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/static/circle_up_icon.svg" alt="home button"  className='w-10 h-10 rounded-full mr-10'/>
+              <img
+                src="/static/circle_up_icon.svg"
+                alt="home button"
+                className="w-10 h-10 rounded-full mr-10"
+              />
             </div>
           </footer>
         </Link>
