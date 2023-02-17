@@ -37,9 +37,9 @@ const Home: NextPage = () => {
 
         {/* Experience  */}
 
-        {/* <section id="experience" className="snap-center">
+        <section id="experience" className="snap-center">
           <Experience />
-        </section> */}
+        </section>
 
         {/* Skills  */}
 
@@ -62,6 +62,7 @@ const Home: NextPage = () => {
         <Link href="#hero">
           <footer className="sticky bottom-5 w-full cursor-pointer">
             <div className='flex items-center justify-end'>
+              {/* // eslint-disable-next-line @next/next/no-img-element */}
               <img src="/static/circle_up_icon.svg" alt="home button"  className='w-10 h-10 rounded-full mr-10'/>
             </div>
           </footer>
