@@ -48,7 +48,7 @@ export default function Contact({}: Props) {
           <input
             {...register('phone')}
             className="contact-input"
-            type="number"
+            type="tel"
             placeholder="Phone"
           />
         </div>
