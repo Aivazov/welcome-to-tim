@@ -30,7 +30,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/components/Skills/Skills copy.js", "src/components/Skills/SkillJS.js"  ],
   "exclude": [
     "node_modules"
   ]
