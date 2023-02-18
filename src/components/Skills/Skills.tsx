@@ -7,22 +7,49 @@ import Skill from './Skill';
 type Props = {
   icon: string;
   status: string;
+  skillName: string;
   key: number;
   icons: [];
 };
 
 const icons = [
-  { url: '/static/skills/html-5.svg', progress: '80%' },
-  { url: '/static/skills/css3.svg', progress: '80%' },
-  { url: '/static/skills/sass.svg', progress: '70%' },
-  { url: '/static/skills/figma-transparent.svg', progress: '70%' },
-  { url: '/static/skills/github.svg', progress: '80%' },
-  { url: '/static/skills/javascript.svg', progress: '70%' },
-  { url: '/static/skills/typescript.svg', progress: '50%' },
-  { url: '/static/skills/react.svg', progress: '65%' },
-  { url: '/static/skills/next.js.svg', progress: '60%' },
-  { url: '/static/skills/framer-motion.svg', progress: '60%' },
-  { url: '/static/skills/tailwindcss.svg', progress: '70%' },
+  { skillName: 'HTML', url: '/static/skills/html-5.svg', progress: '80%' },
+  { skillName: 'CSS', url: '/static/skills/css3.svg', progress: '80%' },
+  { skillName: 'SASS', url: '/static/skills/sass.svg', progress: '70%' },
+  {
+    skillName: 'Bootstrap',
+    url: '/static/skills/bootstrap.svg',
+    progress: '60%',
+  },
+  // { url: '/static/skills/figma.svg', progress: '70%' },
+  {
+    skillName: 'Figma',
+    url: '/static/skills/figma-transparent.svg',
+    progress: '70%',
+  },
+  { skillName: 'GitHub', url: '/static/skills/github.svg', progress: '80%' },
+  {
+    skillName: 'JavaScript',
+    url: '/static/skills/javascript.svg',
+    progress: '65%',
+  },
+  {
+    skillName: 'TypeScript',
+    url: '/static/skills/typescript.svg',
+    progress: '50%',
+  },
+  { skillName: 'React', url: '/static/skills/react.svg', progress: '60%' },
+  { skillName: 'NextJS', url: '/static/skills/nextjs.svg', progress: '50%' },
+  {
+    skillName: 'FramerMotion',
+    url: '/static/skills/framer-motion.svg',
+    progress: '50%',
+  },
+  {
+    skillName: 'TailwindCSS',
+    url: '/static/skills/tailwindcss.svg',
+    progress: '70%',
+  },
 ];
 
 export default function Skills({}: Props) {
@@ -41,8 +68,8 @@ export default function Skills({}: Props) {
       </h3>
 
       <div className="grid grid-cols-4 gap-5 mt-4">
-        {icons?.map(({ url, progress }, idx) => (
-          <Skill key={idx} icon={url} status={progress} />
+        {icons?.map(({ skillName, url, progress }, idx) => (
+          <Skill key={idx} icon={url} status={progress} stack={skillName} />
         ))}
       </div>
     </motion.div>

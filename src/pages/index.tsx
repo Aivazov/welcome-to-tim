@@ -38,14 +38,14 @@ const Home: NextPage = () => (
 
       {/* Experience  */}
 
-      <section id="experience" className="snap-center">
+      {/* <section id="experience" className="snap-center">
         <Experience />
-      </section>
+      </section> */}
 
       {/* Skills  */}
 
       <section id="skills" className="snap-start">
-        <Skills icon={''} status={''} key={0} icons={[]} />
+        <Skills icon={''} status={''} key={0} icons={[]} skillName={''} />
         {/* <SkillsJS /> */}
       </section>
 
@@ -61,17 +61,17 @@ const Home: NextPage = () => (
       </section>
 
       {/* Home button */}
-      {/* <Link href="#hero">
-          <footer className="sticky bottom-5 w-full cursor-pointer">
-            <div className="flex items-center justify-end">
-              <img
-                src="/static/circle_up_icon.svg"
-                alt="home button"
-                className="w-10 h-10 rounded-full mr-10"
-              />
-            </div>
-          </footer>
-        </Link> */}
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-end">
+            <img
+              src="/static/circle_up_icon.svg"
+              alt="home button"
+              className="w-10 h-10 rounded-full mr-10 hover:bg-gray-700 transition-all duration-300 ease-in-out"
+            />
+          </div>
+        </footer>
+      </Link>
     </main>
   </div>
 );

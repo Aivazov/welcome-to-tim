@@ -5,7 +5,7 @@ import MaIcon from 'public/static/projects/MaIcon';
 import GoItIcon from 'public/static/projects/GoItIcon';
 import { JsxAttribute } from 'typescript';
 
-const icons = [
+const experience = [
   {
     icon: MaIcon,
     title: 'Mate Academy',
@@ -39,7 +39,7 @@ export default function Experience({}: Props) {
       {/* <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory"> */}
       <div className="w-full flex overflow-x-scroll space-x-5 overflow-y-hidden snap-x snap-mandatory relative z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 scrollbar-thin">
         {/* Expereince Card */}
-        {/* {icons.map(({ icon, title }, idx) => {
+        {/* {experience.map(({ icon, title }, idx) => {
           return <ExperienceCard icon={icon} key={idx} />;
         })} */}
 
