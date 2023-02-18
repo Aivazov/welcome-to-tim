@@ -64,7 +64,7 @@ export default function Skills({}: Props) {
       <h3 className="title">Skills</h3>
 
       <h3 className="absolute top-36 text-gray-500 text-sm tracking-[3px] uppercase">
-        Some text here
+        Stacks of technology that I have studied and use in my work
       </h3>
 
       <div className="grid grid-cols-4 gap-5 mt-4">

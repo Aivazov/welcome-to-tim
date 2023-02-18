@@ -38,7 +38,7 @@ export default function Header({}: Props) {
             key={key}
             url={icon.url}
             target="_blank"
-            className="cursor-pointer"
+            className="cursor-pointer hover:bg-gray-700 focus:bg-gray-700 rounded-full transition-all duration-300 ease-in-out"
             fgColor="gray"
             bgColor="transparent"
           />
@@ -61,7 +61,7 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
-        <div>
+        <div className=" hover:bg-gray-700 focus:bg-gray-700 rounded-full transition-all duration-300 ease-in-out">
           {/* <Link href="#contact"> */}
           <SocialIcon
             target="_blank"
@@ -70,7 +70,7 @@ export default function Header({}: Props) {
             fgColor="gray"
             bgColor="transparent"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400 pr-2">
             Get in Touch
           </p>
           {/* </Link> */}
