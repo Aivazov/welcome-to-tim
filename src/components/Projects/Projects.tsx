@@ -59,7 +59,7 @@ export default function Projects({}: Props) {
             className="w-screen h-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-0 md:p-20"
             // className="w-screen h-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-0 md:p-20"
           >
-            <div className=" group hover:bg-[#1a243c]/40 ease-in duration-200">
+            <div className="group relative flex cursor-pointer">
               <motion.img
                 initial={{ y: -300, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -67,17 +67,18 @@ export default function Projects({}: Props) {
                 viewport={{ once: true }}
                 src={img}
                 alt="project-image"
-                className="object-cover w-96 h-96 max-sm:w-64 max-sm:h-64 max-md:w-80 max-md:h-80 rounded-lg group-hover:opacity-10 ease-in duration-200"
+                className="object-cover w-96 h-96 max-sm:w-64 max-sm:h-64 max-md:w-80 max-md:h-80 rounded-lg filter group-hover:blur-[2px] hover:brightness-75 transition duration-300 ease-in-out hover:drop-shadow-2xl"
                 // className="object-cover w-96 h-96 max-sm:w-64 max-sm:h-64 max-md:w-80 max-md:h-80 rounded-lg"
               />
-            </div>
 
-            <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-              <Link href={linkToProject} target="_blank">
-                <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:bg-gray-200">
-                  More Info
-                </p>
-              </Link>
+              <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-80 group-hover:bg-white/95 rounded-full transition duration-300 ease-in-out">
+                {/* <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"> */}
+                <Link href={linkToProject} target="_blank">
+                  <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:bg-gray-200 border-gray-800">
+                    Project&apos;s Page
+                  </p>
+                </Link>
+              </div>
             </div>
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">

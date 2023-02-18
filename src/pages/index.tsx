@@ -61,17 +61,17 @@ const Home: NextPage = () => (
       </section>
 
       {/* Home button */}
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="flex items-center justify-end">
+      <footer className="sticky bottom-5 w-full">
+        <div className="flex items-center justify-end">
+          <Link href="#hero">
             <img
               src="/static/circle_up_icon.svg"
               alt="home button"
-              className="w-10 h-10 rounded-full mr-10 hover:bg-gray-700 transition-all duration-300 ease-in-out"
+              className="w-10 h-10 rounded-full mr-10 cursor-pointer hover:bg-gray-700 transition-all duration-300 ease-in-out"
             />
-          </div>
-        </footer>
-      </Link>
+          </Link>
+        </div>
+      </footer>
     </main>
   </div>
 );
