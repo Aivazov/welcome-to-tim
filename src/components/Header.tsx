@@ -41,6 +41,7 @@ export default function Header({}: Props) {
             className="cursor-pointer hover:bg-gray-700 focus:bg-gray-700 rounded-full transition-all duration-300 ease-in-out"
             fgColor="gray"
             bgColor="transparent"
+            style={{width: 32}}
           />
         ))}
       </motion.div>

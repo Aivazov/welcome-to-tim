@@ -60,12 +60,12 @@ export default function Skills({}: Props) {
     >
       <h3 className="title">Skills</h3>
 
-      <h3 className="absolute top-36 text-gray-500 text-sm tracking-[3px]">
+      <h3 className="absolute top-36 text-gray-500 text-sm tracking-[3px] px-10">
         Stacks of technology that I have studied and use in my work
       </h3>
 
-      <div className="bg-gray-800/40 rounded-2xl p-4">
-        <div className="grid grid-cols-4 max-sm:grid-cols-3 gap-5 mt-4 max-md:mt-4">
+      <div className="bg-black/20 rounded-2xl p-4 max-sm:mt-36">
+        <div className="grid grid-cols-4 max-sm:grid-cols-3 gap-5 max-md:mt-4">
           {icons?.map(({ skillName, url, progress }, idx) => (
             <Skill key={idx} icon={url} status={progress} stack={skillName} />
           ))}

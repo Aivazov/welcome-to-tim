@@ -26,7 +26,7 @@ export default function Contact({}: Props) {
     <div className="relative h-screen max-w-7xl px-10 mx-auto flex flex-col justify-evenly items-center text-center sm:flex-row md:text-left z-0">
       <h3 className="title">Contact</h3>
 
-      <h3 className="absolute top-40 text-gray-500 text-center text-md tracking-[1px] max-w-5xl max-md:max-w-xl">
+      <h3 className="absolute top-36 text-gray-500 text-center text-md tracking-[1px] max-w-5xl max-md:max-w-xl max-md:text-xs px-10">
         Please feel free to send me a message by filling out the fields below
         (phone is not required)
       </h3>
@@ -40,7 +40,7 @@ export default function Contact({}: Props) {
         // onSubmit={handleSubmit(onSubmit)}
         // className="flex flex-col space-y-2 w-fit mx-auto"
       >
-        <div className="grid sm:grid-cols-2 gap-2 w-full py-1 max-sm:mt-16 ">
+        <div className="grid sm:grid-cols-2 gap-2 w-full py-1 max-sm:mt-44">
           <div className="flex flex-col">
             <input
               {...register('name')}

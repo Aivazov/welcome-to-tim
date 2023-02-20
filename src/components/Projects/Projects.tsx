@@ -61,13 +61,13 @@ export default function Projects({}: Props) {
           >
             <div className="group relative flex cursor-pointer">
               <motion.img
-                initial={{ y: -200, opacity: 0 }}
+                initial={{ y: -100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.9 }}
                 viewport={{ once: true }}
                 src={img}
                 alt="project-image"
-                className="object-cover w-96 h-96 max-sm:w-64 max-sm:h-64 max-md:w-80 max-md:h-80 rounded-lg filter group-hover:blur-[2px] hover:brightness-75 transition duration-300 ease-in-out hover:drop-shadow-2xl"
+                className="object-cover w-96 h-96 max-[400px]:w-48 max-[400px]:h-48 max-sm:w-64 max-sm:h-64 max-md:w-80 max-md:h-80 rounded-lg filter group-hover:blur-[2px] hover:brightness-75 transition duration-300 ease-in-out hover:drop-shadow-2xl"
                 // className="object-cover w-96 h-96 max-sm:w-64 max-sm:h-64 max-md:w-80 max-md:h-80 rounded-lg"
               />
 
@@ -82,11 +82,11 @@ export default function Projects({}: Props) {
             </div>
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl max-md:text-3xl max-sm:text-2xl font-semibold text-center">
+              <h4 className="text-4xl max-md:text-3xl max-sm:text-xl font-semibold text-center">
                 {title}
               </h4>
 
-              <p className="md:text-left text-center text-lg max-md:max-w-md px-10">
+              <p className="md:text-left text-center max-sm:text-sm text-lg max-md:max-w-md px-10">
                 {description}
               </p>
             </div>
