@@ -7,10 +7,10 @@ import Link from 'next/link';
 type Props = {};
 
 const buttons = [
-  { id: 1, button: 'About' },
-  { id: 2, button: 'Experience' },
-  { id: 3, button: 'Skills' },
-  { id: 4, button: 'Projects' },
+  { id: 1, button: 'About', link: '#about' },
+  // { id: 2, button: 'Experience' },
+  { id: 3, button: 'Skills', link: '#skills' },
+  { id: 4, button: 'Projects', link: '#projects' },
 ];
 // const buttons = [ {button: 'About'}, {button: 'Expreience'}, {button: 'Skills'}, {button: 'Projects'}];
 
@@ -43,23 +43,11 @@ export default function Hero({}: Props) {
         </h1>
 
         <div className="pt-5">
-          {buttons?.map(({ button, id }) => (
-            <Link href="#about" key={id}>
+          {buttons?.map(({ button, id, link }) => (
+            <Link href={link} key={id}>
               <button className="hero-button">{button}</button>
             </Link>
           ))}
-          {/* <Link href="#about">
-            <button className="hero-button">About</button>
-          </Link>
-          <Link href="#experience">
-            <button className="hero-button">Experience</button>
-          </Link>
-          <Link href="#skills">
-            <button className="hero-button">Skills</button>
-          </Link>
-          <Link href="#projects">
-            <button className="hero-button">Projects</button>
-          </Link> */}
         </div>
       </div>
     </div>

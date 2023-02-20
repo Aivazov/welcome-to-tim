@@ -1,8 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Skill from './Skill';
-// import Css from '../../../public/static/skills/css3.svg';
-// import FMotion from '../../../public/static/skills/FramerMotionIcon'
 
 type Props = {
   icon: string;
@@ -21,7 +19,6 @@ const icons = [
     url: '/static/skills/bootstrap.svg',
     progress: '60%',
   },
-  // { url: '/static/skills/figma.svg', progress: '70%' },
   {
     skillName: 'Figma',
     url: '/static/skills/figma-transparent.svg',
@@ -63,7 +60,7 @@ export default function Skills({}: Props) {
     >
       <h3 className="title">Skills</h3>
 
-      <h3 className="absolute top-36 text-gray-500 text-sm tracking-[3px] uppercase">
+      <h3 className="absolute top-36 text-gray-500 text-sm tracking-[3px]">
         Stacks of technology that I have studied and use in my work
       </h3>
 
