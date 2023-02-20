@@ -46,7 +46,6 @@ const Home: NextPage = () => (
 
       <section id="skills" className="snap-start">
         <Skills icon={''} status={''} key={0} icons={[]} skillName={''} />
-        {/* <SkillsJS /> */}
       </section>
 
       {/* Projects */}
