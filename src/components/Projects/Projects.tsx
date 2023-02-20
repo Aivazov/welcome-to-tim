@@ -86,7 +86,7 @@ export default function Projects({}: Props) {
                 {title}
               </h4>
 
-              <p className="md:text-left text-center text-lg max-md:max-w-md">
+              <p className="md:text-left text-center text-lg max-md:max-w-md px-10">
                 {description}
               </p>
             </div>
