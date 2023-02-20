@@ -16,9 +16,7 @@ export default class About extends Component<Props, State> {
         transition={{ duration: 1.5 }}
         className="h-screen flex flex-col justify-evenly items-center text-center md:text-left md:flex-row relative max-w-7xl mx-auto px-10"
       >
-        <h3 className="title">
-          About
-        </h3>
+        <h3 className="title">About</h3>
         <motion.img
           initial={{
             x: 200,
@@ -42,10 +40,20 @@ export default class About extends Component<Props, State> {
         <div className="space-y-10 px-0 md:px-10">
           <h4 className="text-4xl font-semibold">Some details about me</h4>
           <p>
-            Beginning front-end developer with 6 months of training. Along this
-            journey, I realized my passion for coding and JavaScript in
-            particular. Love to learn new technology stacks and expand. Honest.
-            Decent. Learn fast. Motivated. Ready to deliver a real value.
+            Former Sales Manager and Project Manager with a passion for
+            Front-End Dev. At first, it was a hobby of mine. Then I took a
+            seven-month training course. During this interesting dive into the
+            world of web development, I realized that I knew nothing about
+            computer technology :) This motivated me viciously to work even
+            harder to master as many different technology stacks as possible and
+            solve various complex tasks at the highest level of quality.
+          </p>
+
+          <p>
+            I don&apos;t like to leave work unfinished. Learn fast. Motivated.
+            Tech Enthusiast. Honest and decent. Without bad habits. Have
+            experience working in a team. English - something between B1 - B2.
+            Ready to deliver real value.
           </p>
         </div>
       </motion.div>
