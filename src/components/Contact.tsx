@@ -34,7 +34,11 @@ export default function Contact({}: Props) {
       {/* <div className='flex flex-col space-y-10'> </div> */}
 
       <form
-        onSubmit={handleSubmit(onSubmit)}
+        // action="https://getform.io/f/6c34e4c2-f496-4e1b-af1b-dcb7d3dd4246"
+        action="https://getform.io/f/b6eb4c30-4aae-4130-a5e2-cfba62b93401"
+        method="POST"
+        encType="multipart/form-data"
+        // onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col space-y-2 w-fit mx-auto"
       >
         <div className="flex space-x-2">
@@ -42,6 +46,7 @@ export default function Contact({}: Props) {
             {...register('name')}
             className="contact-input"
             type="text"
+            name="name"
             placeholder="Name"
             required
           />
@@ -50,6 +55,7 @@ export default function Contact({}: Props) {
             className="contact-input"
             type="tel"
             placeholder="Phone"
+            name="phone"
           />
         </div>
 
@@ -57,6 +63,7 @@ export default function Contact({}: Props) {
           {...register('email')}
           className="contact-input"
           type="email"
+          name="email"
           placeholder="Email"
           required
         />
@@ -65,6 +72,7 @@ export default function Contact({}: Props) {
           {...register('subject')}
           className="contact-input"
           type="text"
+          name="subject"
           placeholder="Subject"
         />
 
@@ -72,6 +80,7 @@ export default function Contact({}: Props) {
           {...register('message')}
           className="contact-input"
           placeholder="Message"
+          name="message"
           required
         ></textarea>
         <button

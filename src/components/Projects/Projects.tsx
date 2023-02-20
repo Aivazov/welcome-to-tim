@@ -61,9 +61,9 @@ export default function Projects({}: Props) {
           >
             <div className="group relative flex cursor-pointer">
               <motion.img
-                initial={{ y: -300, opacity: 0 }}
+                initial={{ y: -200, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.2 }}
+                transition={{ duration: 0.9 }}
                 viewport={{ once: true }}
                 src={img}
                 alt="project-image"
