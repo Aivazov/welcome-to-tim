@@ -44,7 +44,7 @@ export default class About extends Component<Props, State> {
             <h4 className="max-xl:hidden text-4xl font-semibold max-sm:text-2xl max-[380px]:text-lg">
               Some details about me
             </h4>
-            <div className="space-y-7 px-0 md:px-10 md:text-sm max-lg:mt-8 max-sm:text-sm max-[380px]:text-xs">
+            <div className="space-y-7 px-0 md:px-10 md:text-sm max-lg:mt-8 max-sm:text-sm max-[380px]:text-xs xl:mt-12 xl:text-xl">
               <p>
                 Former Sales Manager and Project Manager with a passion for
                 Front-End Dev. At first, it was a hobby of mine. Then I took a

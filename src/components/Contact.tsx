@@ -39,6 +39,7 @@ export default function Contact({}: Props) {
         encType="multipart/form-data"
         // onSubmit={handleSubmit(onSubmit)}
         // className="flex flex-col space-y-2 w-fit mx-auto"
+        className="lg:w-[700px] mx-auto sm:w-[500px]"
       >
         <div className="grid sm:grid-cols-2 gap-2 w-full py-1 max-sm:mt-44">
           <div className="flex flex-col">
