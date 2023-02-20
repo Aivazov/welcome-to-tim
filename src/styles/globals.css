@@ -17,6 +17,6 @@
   }
 
   .title {
-    @apply absolute ml-4 top-24 text-2xl text-gray-500 uppercase tracking-[19px];
+    @apply absolute ml-4 top-24 text-2xl text-gray-500 uppercase tracking-[19px] z-0;
   }
 }

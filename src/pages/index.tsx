@@ -67,7 +67,7 @@ const Home: NextPage = () => (
             <img
               src="/static/circle_up_icon.svg"
               alt="home button"
-              className="w-10 h-10 rounded-full mr-10 cursor-pointer hover:bg-gray-700 transition-all duration-300 ease-in-out"
+              className="absolute w-10 h-10 rounded-full mr-10 cursor-pointer hover:bg-gray-700 transition-all duration-300 ease-in-out  right-0  bottom-0"
             />
           </Link>
         </div>

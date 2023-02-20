@@ -32,13 +32,15 @@ export default class About extends Component<Props, State> {
           transition={{
             duration: 0.8,
           }}
-          src="/static/about-picture.png"
+          src="/static/about-picture.jpg"
           alt="about-tim"
-          className="flex-shrink-0 max-md:rounded-full object-cover md:w-80 md:h-80 -pb-30 max-md:w-60 max-md:h-60 rounded-lg xl:w-[500px] xl:h-[600px]"
+          className="flex-shrink-0 max-md:rounded-full object-cover md:w-80 md:h-80 max-md:mt-24 max-md:-mb-6 max-md:w-60 max-md:h-60 rounded-lg xl:w-[500px] xl:h-[600px]"
         />
 
-        <div className="space-y-10 px-0 md:px-10">
-          <h4 className="text-4xl font-semibold">Some details about me</h4>
+        <div className="space-y-7 px-0 md:px-10 max-sm:text-sm">
+          <h4 className="text-4xl font-semibold max-sm:text-2xl">
+            Some details about me
+          </h4>
           <p>
             Former Sales Manager and Project Manager with a passion for
             Front-End Dev. At first, it was a hobby of mine. Then I took a
