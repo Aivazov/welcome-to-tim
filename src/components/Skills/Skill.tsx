@@ -47,11 +47,15 @@ export default function Skill({ directionLeft, icon, status, stack }: Props) {
         className="rounded-full border border-gray-500 object-cover max-[374px]:w-10 max-[374px]:h-10 max-sm:w-14 max-sm:h-14 sm:w-24 sm:h-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         // className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
       />
-      <div className="absolute opacity-0 group-hover:opacity-80 group-hover:bg-white/95 rounded-full transition duration-300 ease-in-out max-[380px]:w-12 max-[380px]:h-12 max-sm:w-16 max-sm:h-16 sm:w-24 sm:h-24 xl:w-32 xl:h-32">
+      <div className="absolute opacity-0 group-hover:opacity-80 group-hover:bg-white/95 rounded-full transition duration-300 ease-in-out max-[374px]:w-10 max-[374px]:h-10 max-sm:w-14 max-sm:h-14 sm:w-24 sm:h-24 xl:w-32 xl:h-32">
         {/* <div className="absolute opacity-0 group-hover:opacity-80 group-hover:bg-white/95 rounded-full transition duration-300 ease-in-out max-md:w-24 max-md:h-24 md:w-28 md:h-28 xl:w-32 xl:h-32"> */}
         <div className="flex flex-col items-center justify-center h-full">
-          <p className="text-xs text-black font-bold opacity-100">{stack}</p>
-          <p className="text-2xl text-black font-bold opacity-100">{status}</p>
+          <p className="max-sm:hidden text-xs text-black font-bold opacity-100">
+            {stack}
+          </p>
+          <p className="max-sm:text-sm text-2xl text-black font-bold opacity-100">
+            {status}
+          </p>
         </div>
       </div>
     </motion.div>

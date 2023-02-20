@@ -54,7 +54,7 @@ export default function Skills({}: Props) {
     <motion.div
       initial={{ opacity: 0, scale: 0.85 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.3, delayChildren: 0.4, staggerChildren: 0.2 }}
+      transition={{ duration: 0.6, delayChildren: 0.4, staggerChildren: 0.5 }}
       viewport={{ once: true }}
       className="h-screen flex flex-col justify-evenly items-center text-center md:text-left md:flex-row relative max-w-7xl mx-auto px-10"
     >
