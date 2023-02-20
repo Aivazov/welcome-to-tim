@@ -19,7 +19,7 @@ export default class About extends Component<Props, State> {
         <h3 className="title">About</h3>
         <motion.img
           initial={{
-            x: 200,
+            x: -200,
             opacity: 0,
           }}
           whileInView={{

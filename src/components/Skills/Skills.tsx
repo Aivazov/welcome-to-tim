@@ -52,9 +52,9 @@ const icons = [
 export default function Skills({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      initial={{ opacity: 0, scale: 0.85 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.3, delayChildren: 0.4, staggerChildren: 0.2 }}
       viewport={{ once: true }}
       className="h-screen flex flex-col justify-evenly items-center text-center md:text-left md:flex-row relative max-w-7xl mx-auto px-10"
     >
@@ -64,10 +64,12 @@ export default function Skills({}: Props) {
         Stacks of technology that I have studied and use in my work
       </h3>
 
-      <div className="grid grid-cols-4 gap-5 mt-4">
-        {icons?.map(({ skillName, url, progress }, idx) => (
-          <Skill key={idx} icon={url} status={progress} stack={skillName} />
-        ))}
+      <div className="bg-gray-800/40 rounded-2xl p-4">
+        <div className="grid grid-cols-4 gap-5 mt-4">
+          {icons?.map(({ skillName, url, progress }, idx) => (
+            <Skill key={idx} icon={url} status={progress} stack={skillName} />
+          ))}
+        </div>
       </div>
     </motion.div>
   );
