@@ -2,6 +2,7 @@ import Head from 'next/head';
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import { Inter } from '@next/font/google';
+import React, { useState } from 'react';
 
 import Header from '../components/Header';
 import Hero from '../components/Hero/Hero';

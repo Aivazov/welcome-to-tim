@@ -41,7 +41,7 @@ export default function Header({}: Props) {
             className="cursor-pointer hover:bg-gray-700 focus:bg-gray-700 rounded-full transition-all duration-300 ease-in-out"
             fgColor="gray"
             bgColor="transparent"
-            style={{width: 32}}
+            style={{ width: 40, height: 40 }}
           />
         ))}
       </motion.div>
@@ -65,15 +65,19 @@ export default function Header({}: Props) {
         <div className=" hover:bg-gray-700 focus:bg-gray-700 rounded-full transition-all duration-300 ease-in-out">
           {/* <Link href="#contact"> */}
           <SocialIcon
-            target="_blank"
+            url="#contact"
+            // target="_blank"
             network="email"
             className="cursor-pointer"
             fgColor="gray"
+            style={{ width: 40, height: 40 }}
             bgColor="transparent"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400 pr-2">
-            Get in Touch
-          </p>
+          <a href="#contact">
+            <p className="uppercase hidden md:inline-flex text-xs tracking-[1px] text-gray-400 pr-2">
+              Get in Touch
+            </p>
+          </a>
           {/* </Link> */}
         </div>
       </motion.div>

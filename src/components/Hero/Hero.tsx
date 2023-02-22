@@ -1,6 +1,7 @@
 import React from 'react';
 // import Image from 'next/image';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { motion } from 'framer-motion';
 import BackgroundCircles from './BackgroundCircles';
 import Link from 'next/link';
 
@@ -26,9 +27,24 @@ export default function Hero({}: Props) {
     delaySpeed: 2000,
   });
   return (
-    <div className="flex flex-col space-y-8 items-center justify-center h-screen text-center overflow-hidden">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 0.6,
+        delayChildren: 0.9,
+      }}
+      viewport={{ once: true }}
+      className="flex flex-col space-y-8 items-center justify-center h-screen text-center overflow-hidden"
+    >
       <BackgroundCircles />
-      <img
+      <motion.img
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.3,
+        }}
+        viewport={{ once: true }}
         className="rounded-full relative h-32 w-32 object-cover"
         src="/static/tim-aivazov.png"
         alt="tim's hero image"
@@ -50,6 +66,6 @@ export default function Hero({}: Props) {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
