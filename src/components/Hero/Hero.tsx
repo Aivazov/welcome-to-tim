@@ -46,7 +46,7 @@ export default function Hero({}: Props) {
         }}
         viewport={{ once: true }}
         className="rounded-full relative h-32 w-32 object-cover"
-        src="/static/tim-aivazov.png"
+        src="/static/tim-aivazov.jpg"
         alt="tim's hero image"
       />
       <div className="z-20">
