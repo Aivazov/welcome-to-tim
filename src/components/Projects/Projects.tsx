@@ -15,6 +15,14 @@ const projects = [
   },
   {
     id: 2,
+    img: '/static/projects/movie-search-app.jpg',
+    title: 'Movie Search App',
+    description:
+      'A simple movie search app. The user enters a keyword and selects the desired match. The information is taken from the OMDb API. Written with Next.js using Typescript & TailwindCSS',
+    linkToProject: 'https://movie-search-app-nextjs.vercel.app/',
+  },
+  {
+    id: 3,
     img: '/static/projects/simple-portfolio-spa.png',
     title: 'Simple Portfolio SPA',
     description:
@@ -22,7 +30,7 @@ const projects = [
     linkToProject: 'https://aivazov.github.io/portfolio-spa/',
   },
   {
-    id: 3,
+    id: 4,
     img: '/static/projects/image-finder-react.jpg',
     title: 'ImageFinder App',
     description:
@@ -30,7 +38,7 @@ const projects = [
     linkToProject: 'https://aivazov.github.io/react-hooks-images-gallery/',
   },
   {
-    id: 4,
+    id: 5,
     img: '/static/projects/dashboard.jpg',
     title: 'Test Dashboard App',
     description:
