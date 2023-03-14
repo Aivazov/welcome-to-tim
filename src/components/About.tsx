@@ -70,9 +70,9 @@ export default class About extends Component<Props, State> {
               <p>
                 But when I stumbled across a Javascript tutorial seven months
                 ago, I knew exactly what I most wanted to do next: Software
-                Development. Since then, I've been studying the front-end
+                Development. Since then, I&apos;ve been studying the front-end
                 development stack relentlessly. I enjoy communicating with the
-                interpreter in "his" language and making interesting
+                interpreter in &quot;his&quot; language and making interesting
                 functionality on my own. I get a kick out of applying new
                 technologies and incorporating them into my projects. It reminds
                 me that any problem is solvable, you just need a little more
